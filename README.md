@@ -48,7 +48,7 @@ To configure and run a pipe
 
 1. Open the Simple Data Pipe web console.
 2. Select __Create A New Pipe__.
-3. Select __Sample OAuth Data Source__ for the __Type__ when creating a new pipe  
+3. Select __Reddit OAuth Data Source__ for the __Type__ when creating a new pipe  
 4. In the _Connect_ page, enter the _application id_ and _secret_ from the reddit app preferences page. 
 5. Select the data set (or data sets) to be loaded.
 6. Schedule or run the data pipe now.
