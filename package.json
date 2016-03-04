@@ -1,7 +1,7 @@
 {
   "name": "simple-data-pipe-connector-oauth-reddit",
   "version": "0.0.1",
-  "description": "Basic oAuth connector template for Simple Data Pipe.",
+  "description": "Basic Simple Data Pipe connector starter kit for reddit.",
   "main": "./lib",
   "repository": {
     "type": "git",
@@ -20,9 +20,6 @@
   ],
   "dependencies": {
     "bluemix-helper-config": "^0.1.13",
-    "fs": "0.0.2",
-    "lodash": "^4.3.0",
-    "path": "^0.12.7",
     "passport-reddit": "https://github.com/ptitzler/passport-reddit.git",
     "simple-data-pipe-sdk": "^0.2.2"
   },
