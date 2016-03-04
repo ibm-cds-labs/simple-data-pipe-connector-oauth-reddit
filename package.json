@@ -1,0 +1,37 @@
+{
+  "name": "simple-data-pipe-connector-oauth-reddit",
+  "version": "0.0.1",
+  "description": "Basic oAuth connector template for Simple Data Pipe.",
+  "main": "./lib",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ibm-cds-labs/simple-data-pipe-connector-oauth-reddit"
+  },
+  "simple_data_pipe": {
+    "name": "reddit_oauth_only",
+    "service_dependencies": []
+  },
+  "keywords": [
+    "simple data pipe",
+    "reddit",
+    "connector",
+    "Cloudant",
+    "data movement"
+  ],
+  "dependencies": {
+    "bluemix-helper-config": "^0.1.13",
+    "fs": "0.0.2",
+    "lodash": "^4.3.0",
+    "path": "^0.12.7",
+    "passport-reddit": "https://github.com/ptitzler/passport-reddit.git",
+    "simple-data-pipe-sdk": "^0.2.2"
+  },
+  "author": {
+    "name": "ptitzler@us.ibm.com"
+  },
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/ibm-cds-labs/simple-data-pipe-connector-oauth-reddit/issues"
+  },
+  "readmeFilename": "README.md"
+}
