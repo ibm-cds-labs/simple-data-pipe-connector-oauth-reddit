@@ -3,7 +3,7 @@
 ***
 
 
-# Simple Data Pipe connector starter for reddit
+# Simple Data Pipe connector starter kit for reddit
 
 This [Simple Data Pipe](https://developer.ibm.com/clouddataservices/simple-data-pipe/) connector for reddit starter kit has been customized for reddit.com OAuth access. You can build your own special purpose connector by implementing the `getRedditDataSetList` and `fetchRecords` functions in `lib/index.js` to fetch the desired data from reddit and optionally enrich it.
 
@@ -20,7 +20,7 @@ This [Simple Data Pipe](https://developer.ibm.com/clouddataservices/simple-data-
 
 This connector does not require any additional Bluemix service.
 
-##### Install the Simple Data Pipe Reddit connector starter
+##### Install the Simple Data Pipe connector starter kit for reddit
 
   When you [follow these steps to install this connector](https://github.com/ibm-cds-labs/simple-data-pipe/wiki/Installing-a-Simple-Data-Pipe-Connector), add the following line to the dependencies list in the `package.json` file: 
 
@@ -31,7 +31,7 @@ This connector does not require any additional Bluemix service.
 ##### Enable OAuth support and collect connectivity information
 
  You need to register the Simple Data Pipe application before you can use it to load data.
- 1. Open the [reddit](http.reddit.com) web page and log in.
+ 1. Open the [reddit](http://www.reddit.com) web page and log in.
  2. Click **Preferences** and select the **apps** tab.
  3. **Create another app...**
  4. Assign an application **name** and enter an optional **description**.
