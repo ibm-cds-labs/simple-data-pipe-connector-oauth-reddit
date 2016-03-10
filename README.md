@@ -5,7 +5,7 @@
 
 # Simple Data Pipe connector starter for reddit
 
-This [Simple Data Pipe](https://developer.ibm.com/clouddataservices/simple-data-pipe/) connector for reddit starter kit has been customized for reddit.com OAuth access. You can build your own special purpose connector by implementing the `getTables` and `fetchRecords` functions in `lib/index.js` to fetch the desired data from reddit and optionally enrich it.
+This [Simple Data Pipe](https://developer.ibm.com/clouddataservices/simple-data-pipe/) connector for reddit starter kit has been customized for reddit.com OAuth access. You can build your own special purpose connector by implementing the `getRedditDataSetList` and `fetchRecords` functions in `lib/index.js` to fetch the desired data from reddit and optionally enrich it.
 
 ### Pre-requisites
 
