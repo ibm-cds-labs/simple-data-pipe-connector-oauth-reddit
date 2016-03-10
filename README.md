@@ -35,7 +35,7 @@ This connector does not require any additional Bluemix service.
  2. Click **Preferences** and select the **apps** tab.
  3. **Create another app...**
  4. Assign an application **name** and enter an optional **description**.
- 5. As _redirect URL_ enter `https://<simple-data-...mybluemix.net>/auth/passport/callback`.
+ 5. As _redirect URL_ enter `https://<simple-data-...mybluemix.net>/authCallback`.
    > Replace `<simple-data-...mybluemix.net>` with the fully qualified host name of your Simple Data Pipe application on Bluemix.
 
  6. Click **create app**.
