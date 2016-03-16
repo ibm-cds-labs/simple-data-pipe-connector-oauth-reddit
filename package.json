@@ -8,7 +8,7 @@
     "url": "https://github.com/ibm-cds-labs/simple-data-pipe-connector-oauth-reddit.git"
   },
   "simple_data_pipe": {
-    "name": "trello_oauth1_0_boilerplate",
+    "name": "reddit_oauth1_0_boilerplate",
     "service_dependencies": []
   },
   "keywords": [
