@@ -7,7 +7,7 @@
     "forin"         : false,
     "jquery"        : true,
     "latedef"       : true,
-    "maxparams"     : 5,
+    "maxparams"     : 8,
     "maxdepth"      : 3,
     "maxstatements" : false,
     "noarg"         : true,
