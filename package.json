@@ -23,7 +23,7 @@
     "lodash": "^4.6.1",
     "passport-reddit": "git+https://github.com/ptitzler/passport-reddit.git",
     "request": "^2.69.0",
-    "simple-data-pipe-sdk": "git://github.com/ibm-cds-labs/simple-data-pipe-sdk.git#pp_validation",
+    "simple-data-pipe-sdk": "^0.2.4",
     "util": "^0.10.3"
   },
   "author": {
