@@ -1,14 +1,14 @@
 {
   "name": "simple-data-pipe-connector-oauth-reddit",
   "version": "0.0.2",
-  "description": "Simple Data Pipe connector starter kit for reddit.",
+  "description": "Simple Data Pipe connector OAuth1.0 boilerplate for reddit.",
   "main": "./lib",
   "repository": {
     "type": "git",
     "url": "https://github.com/ibm-cds-labs/simple-data-pipe-connector-oauth-reddit.git"
   },
   "simple_data_pipe": {
-    "name": "reddit_oauth_starter_kit",
+    "name": "reddit_oauth1_0_boilerplate",
     "service_dependencies": []
   },
   "keywords": [
@@ -23,7 +23,7 @@
     "lodash": "^4.6.1",
     "passport-reddit": "git+https://github.com/ptitzler/passport-reddit.git",
     "request": "^2.69.0",
-    "simple-data-pipe-sdk": "^0.2.2",
+    "simple-data-pipe-sdk": "^0.2.4",
     "util": "^0.10.3"
   },
   "author": {
