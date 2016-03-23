@@ -6,7 +6,7 @@
 # Simple Data Pipe connector boilerplate for reddit
 
 This [Simple Data Pipe](https://developer.ibm.com/clouddataservices/simple-data-pipe/) connector for reddit boilerplate has been customized for [reddit.com](http://www.reddit.com) OAuth access. You can build your own special purpose connector by implementing the `getRedditDataSetList` and `fetchRecords` functions in `lib/index.js` to fetch the desired data from reddit and optionally enrich it.
-API responses are by default stored in CLoudant as follows:
+API responses are by default stored in Cloudant as follows:
 
 #####Record structure
 ```json
