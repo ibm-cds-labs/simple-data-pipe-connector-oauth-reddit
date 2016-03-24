@@ -19,6 +19,7 @@
     "data movement"
   ],
   "dependencies": {
+    "async": "^1.5.0",
     "bluemix-helper-config": "^0.1.13",
     "lodash": "^4.6.1",
     "passport-reddit": "git+https://github.com/ptitzler/passport-reddit.git",
