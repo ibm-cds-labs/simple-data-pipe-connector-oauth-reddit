@@ -47,9 +47,9 @@ See https://www.reddit.com/dev/api for more information
  "num_reports": null,
  "distinguished": null,
  "tree_path": [
-  "t3_xxxxxx",
   "t1_xxxxxx",
-  "t1_xxxxxx"
+  "t1_xxxxxx",
+  "t3_xxxxxx"
  ],
  "tree_level": 3,
  "pt_type": "<subreddit_id>"		 		 
