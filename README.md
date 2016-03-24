@@ -6,9 +6,13 @@
 # Simple Data Pipe connector boilerplate for reddit
 
 This [Simple Data Pipe](https://developer.ibm.com/clouddataservices/simple-data-pipe/) connector for reddit boilerplate has been customized for [reddit.com](http://www.reddit.com) OAuth access. You can build your own special purpose connector by implementing the `getRedditDataSetList` and `fetchRecords` functions in `lib/index.js` to fetch the desired data from reddit and optionally enrich it.
-API responses are by default stored in Cloudant as follows:
 
-See https://www.reddit.com/dev/api for more information
+The data property for the article and every comment in the comment tree is retrieved and stored in Cloudant (See [https://www.reddit.com/dev/api](https://www.reddit.com/dev/api) for more information).
+Since every comment in the comment tree is retrieved and store individually, the replies property for each document is not stored in Cloudant.
+Two additional properties are added to each document:
+ 
+1. tree_level: The level at which the article or comment appears in the tree.
+2. tree_path: The path from the comment up to the article document (an array of ids starting with the comment's parent id and moving all the way up to the article id - the root of the tree).
 
 #####Sample Record structure
 ```json
