@@ -1,0 +1,26 @@
+<section class="layout_section theme_light">
+
+  <h1 class="type_heading" id="toc_0">
+    <mark class="type_mark">Filter data</mark>
+  </h1>
+  
+</section>
+
+<section class="layout_section">
+
+<p class="type_copy">
+    Pick one of the following Reddit AMAs.
+</p>
+
+<div class="form_standard">
+    <div class="form_field">
+        <select class="input_select" id="selected_table" name="selectedTable" ng-model="selectedPipe.selectedTableId">
+            <!-- Display data set information  --> 
+            <option ng-repeat="table in getTablesList()" value="{{table.name}}" ng-click="selectTable(table)">{{table.label || table.labelPlural || table.name}}</option>
+        </select>
+    </div>
+</div>
+
+<page-button-bar connect="false" nextPageTab="scheduling"/>
+
+</section>

@@ -6,16 +6,56 @@
 # Simple Data Pipe connector boilerplate for reddit
 
 This [Simple Data Pipe](https://developer.ibm.com/clouddataservices/simple-data-pipe/) connector for reddit boilerplate has been customized for [reddit.com](http://www.reddit.com) OAuth access. You can build your own special purpose connector by implementing the `getRedditDataSetList` and `fetchRecords` functions in `lib/index.js` to fetch the desired data from reddit and optionally enrich it.
-API responses are by default stored in Cloudant as follows:
 
-#####Record structure
+The data property for the selected article and every comment in the comment tree is retrieved and stored in Cloudant (See [https://www.reddit.com/dev/api](https://www.reddit.com/dev/api) for more information).
+Since every comment in the comment tree is retrieved and stored individually the replies property for each document is not stored in Cloudant.
+Two additional properties are added to each document:
+ 
+1. tree_level: The level at which the article or comment appears in the tree.
+2. tree_path: The path from the comment up to the article document (an array of ids starting with the comment's parent id and moving all the way up to the article id - the root of the tree).
+
+#####Sample Record structure
 ```json
 {
  "..." : "<cloudant document properties such as _id and _rev>",
-"kind": "Listing",
-"data": {
-          "<Listing_properties>" : "see https://www.reddit.com/dev/api"
-        },
+ "subreddit_id": "t5_xxxxx",
+ "banned_by": null,
+ "removal_reason": null,
+ "link_id": "t3_xxxxxx",
+ "likes": null,
+ "user_reports": [],
+ "saved": false,
+ "id": "xxxxxxx",
+ "gilded": 0,
+ "archived": false,
+ "report_reasons": null,
+ "author": "<author>",
+ "parent_id": "t3_xxxxxx",
+ "score": 1,
+ "approved_by": null,
+ "controversiality": 0,
+ "body": "Do you guys need any software engineers? ",
+ "edited": false,
+ "author_flair_css_class": null,
+ "downs": 0,
+ "body_html": "&lt;div class=\"md\"&gt;&lt;p&gt;Do you guys need any software engineers? &lt;/p&gt;\n&lt;/div&gt;",
+ "stickied": false,
+ "subreddit": "IAmA",
+ "score_hidden": false,
+ "name": "t1_xxxxxxx",
+ "created": 1458803108,
+ "author_flair_text": null,
+ "created_utc": 1458774308,
+ "ups": 1,
+ "mod_reports": [],
+ "num_reports": null,
+ "distinguished": null,
+ "tree_path": [
+  "t1_xxxxxx",
+  "t1_xxxxxx",
+  "t3_xxxxxx"
+ ],
+ "tree_level": 3,
  "pt_type": "<subreddit_id>"		 		 
 }
 ```
