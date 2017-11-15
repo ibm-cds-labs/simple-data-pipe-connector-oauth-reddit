@@ -1,9 +1,6 @@
-> Hey there! So you want to build your own Simple Data Pipe connector? [Start here](https://github.com/ibm-cds-labs/simple-data-pipe-connector-oauth-template/wiki/How-to-Build-a-Simple-Data-Pipe-Connector).
-
-***
-
-
 # Simple Data Pipe connector boilerplate for reddit
+
+:no_entry_sign: This project is no longer maintained.
 
 This [Simple Data Pipe](https://developer.ibm.com/clouddataservices/simple-data-pipe/) connector for reddit boilerplate has been customized for [reddit.com](http://www.reddit.com) OAuth access. You can build your own special purpose connector by implementing the `getRedditDataSetList` and `fetchRecords` functions in `lib/index.js` to fetch the desired data from reddit and optionally enrich it.
 
@@ -14,7 +11,7 @@ Two additional properties are added to each document:
 1. tree_level: The level at which the article or comment appears in the tree.
 2. tree_path: The path from the comment up to the article document (an array of ids starting with the comment's parent id and moving all the way up to the article id - the root of the tree).
 
-#####Sample Record structure
+##### Sample Record structure
 ```json
 {
  "..." : "<cloudant document properties such as _id and _rev>",
